@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | ARNOLD TEC</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="#">
+            ARNOLD TEC
+            <small class="d-block" style="font-size: 0.7rem;">RUC: 10733613970</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+
+    <h1 class="display-4 text-center text-primary font-weight-bold">Nuestros Productos</h1>
+    <p class="lead text-center mb-5">Celulares de última generación al mejor precio</p>
+
+    <h2 class="text-center font-weight-bold mb-4">iPhones</h2>
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="iPhone 14 Pro">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">iPhone 14 Pro</h5>
+                    <p class="card-text">Desde S/. 4,999</p>
+                    <button onclick="addToCart('iPhone 14 Pro', 4999, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="iPhone 15 Pro">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">iPhone 15 Pro</h5>
+                    <p class="card-text">Desde S/. 5,299</p>
+                    <button onclick="addToCart('iPhone 15 Pro', 5299, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-center font-weight-bold mt-5 mb-4">Samsung</h2>
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S23 Ultra">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">Samsung S23 Ultra</h5>
+                    <p class="card-text">Desde S/. 4,599</p>
+                    <button onclick="addToCart('Samsung S23 Ultra', 4599, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S24">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">Samsung S24</h5>
+                    <p class="card-text">Desde S/. 4,999</p>
+                    <button onclick="addToCart('Samsung S24', 4999, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h2 class="text-center font-weight-bold mt-5 mb-4">Xiaomi</h2>
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S23 Ultra">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">xiaomi S23 Ultra</h5>
+                    <p class="card-text">Desde S/. 4,599</p>
+                    <button onclick="addToCart('Samsung S23 Ultra', 4599, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S24">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">xiami S24</h5>
+                    <p class="card-text">Desde S/. 4,999</p>
+                    <button onclick="addToCart('Samsung S24', 4999, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-center font-weight-bold mt-5 mb-4">Honor</h2>
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S23 Ultra">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">Honor S23 Ultra</h5>
+                    <p class="card-text">Desde S/. 4,599</p>
+                    <button onclick="addToCart('Samsung S23 Ultra', 4599, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="img/cel3.webp" class="card-img-top" alt="Samsung S24">
+                <div class="card-body text-center">
+                    <h5 class="card-title font-weight-bold">Honor S24</h5>
+                    <p class="card-text">Desde S/. 4,999</p>
+                    <button onclick="addToCart('Samsung S24', 4999, 'img/cel3.webp')" class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer text-center py-3 bg-dark text-white">
+    <p class="mb-1">&copy; 2025 ARNOLD TEC — Todos los derechos reservados</p>
+    <p>Creado por <strong>Jhon Arnold Chino Díaz</strong></p>
+    <div>
+        <a href="https://www.facebook.com" class="text-info" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com" class="text-info" target="_blank">Instagram</a> |
+        <a href="https://www.linkedin.com" class="text-info" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

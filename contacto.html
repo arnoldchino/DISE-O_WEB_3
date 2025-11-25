@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de ARNOLD TEC">
+    <title>Contacto | ARNOLD TEC</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="#">
+            ARNOLD TEC
+            <small class="d-block" style="font-size: 0.7rem;">RUC: 10733613970</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <h1 class="display-4 text-center text-primary font-weight-bold">Contáctanos</h1>
+    <p class="lead text-center mb-4">¿Tienes alguna consulta? Estamos para ayudarte.</p>
+
+    <form id="contactForm" class="shadow p-4 bg-white rounded">
+        <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tunombre@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block font-weight-bold">Enviar Mensaje</button>
+    </form>
+
+    <hr class="my-5">
+
+    <section class="info-section shadow p-4 bg-white rounded text-center">
+        <h2 class="text-primary font-weight-bold mb-3">Información de la Empresa</h2>
+
+        <p><strong>Dirección:</strong> Av. Principal 123, Arequipa, Perú</p>
+        <p><strong>Teléfono:</strong> +51 123 456 789</p>
+        <p><strong>Correo Electrónico:</strong> contacto@arnoldtec.com</p>
+
+        <p class="font-weight-bold mb-1">Horarios:</p>
+        <ul class="ml-3">
+            <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+            <li>Sábado: 10:00 AM - 4:00 PM</li>
+            <li>Domingo: Cerrado</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer text-center py-3 bg-dark text-white">
+    <p class="mb-1">&copy; 2025 ARNOLD TEC — Todos los derechos reservados</p>
+    <div>
+        <a href="https://www.facebook.com" target="_blank" class="text-info">Facebook</a> |
+        <a href="https://www.instagram.com" target="_blank" class="text-info">Instagram</a> |
+        <a href="https://www.linkedin.com" target="_blank" class="text-info">LinkedIn</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("¡Mensaje enviado correctamente!");
+    this.reset();
+});
+</script>
+
+</body>
+</html>

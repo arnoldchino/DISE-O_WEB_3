@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6e2f5;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #0b3fa8 !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 0.4rem;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    border-radius: 0.4rem;
+}
+
+.btn-success {
+    background-color: #25994a;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1d6c36;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+footer .redes a {
+    color: #4ac7ff;
+    margin: 0 4px;
+}
+
+footer .redes a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

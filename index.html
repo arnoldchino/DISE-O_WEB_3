@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARNOLD TEC | Tienda Oficial de Celulares</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="#">
+            ARNOLD TEC
+            <small class="d-block" style="font-size: 0.7rem;">RUC: 10733613970</small>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto font-weight-bold text-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <div class="jumbotron bg-white shadow-sm rounded">
+        <h1 class="display-4 text-primary text-center font-weight-bold">¡Ofertas Exclusivas!</h1>
+        <p class="lead text-center mb-4">Los mejores celulares a precios increíbles</p>
+
+        <div class="row mt-4 justify-content-center">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <img src="img/cel2.jpg" class="card-img-top" alt="iPhone 14 Pro">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">iPhone 14 Pro</h5>
+                        <p class="card-text">Desde S/. 4,999</p>
+                        <button onclick="addToCart(1)" class="btn btn-success w-100">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <img src="img/cel3.webp" class="card-img-top" alt="Samsung Galaxy S23">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Samsung S23 Ultra</h5>
+                        <p class="card-text">Desde S/. 4,599</p>
+                        <button onclick="addToCart(2)" class="btn btn-success w-100">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <img src="img/cel4.jpg" class="card-img-top" alt="Xiaomi 13 Pro">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Xiaomi 13 Pro</h5>
+                        <p class="card-text">Desde S/. 2,999</p>
+                        <button onclick="addToCart(4)" class="btn btn-success w-100">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-center text-white py-3">
+    <p class="mb-1">&copy; 2025 DISEÑO WEB — Todos los derechos reservados.</p>
+    <p class="mb-2">Creado por <strong>Jhon Arnold Chino Díaz</strong></p>
+    <div>
+        <a href="https://www.facebook.com" target="_blank" class="text-info">Facebook</a> |
+        <a href="https://www.instagram.com" target="_blank" class="text-info">Instagram</a> |
+        <a href="https://www.linkedin.com" target="_blank" class="text-info">LinkedIn</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
